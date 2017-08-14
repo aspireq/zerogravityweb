@@ -1,0 +1,75 @@
+@media(max-width:350px) {
+    
+}
+@media(max-width:500px) {
+   .header-list-1 {
+    text-align: center
+   }
+   .header-social{
+    text-align: center;
+    float: none !important
+   }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+    
+}
+@media (max-width: 767px) {
+    .navbar-collapse{
+        width: 100%
+    }
+    .navbar-header{
+        width: 50px;
+        float: right;
+        margin: 10px 0
+    }
+}
+@media (min-width: 768px) {
+    .cf:before,.cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    .cf:after {
+        clear: both;
+    }
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+  .cf {
+      *zoom: 1;
+  }
+.wrapper {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content {
+    width:75%;
+}
+.sidebar {
+  width: 25%;
+}
+.content,
+.sidebar {
+  float: left;
+}
+/* The sticky */
+.sidebar {
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top:30px;
+}
+}
+@media(min-width:768px) and (max-width:992px) {
+    
+}
+@media(min-width:992px) and (max-width:1024px) {
+    
+}
+@media(min-width:1025px) and (max-width:1196px) {
+    
+}
+@media(min-width:1200px) {} @media(min-width:1600px) {
+    }

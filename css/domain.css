@@ -1,0 +1,38 @@
+.domain-search{
+    background-color: #feffea;
+    padding:13px;
+    border-radius: 5px;
+    border:8px solid #dedede;;
+
+}
+.domain-search .btn{
+    padding: 8px 12px;
+}
+.m-40{
+    margin:40px 0;
+}
+.domaintool .media{
+    min-height:130px
+}
+.offer .media-left a {
+   padding: 15px;
+}
+.offer .media-left a {
+    border: 1px solid #BFBFBF;
+}
+.domaintool .media:hover .media-left a{
+    border: 1px solid #D30017
+}
+.content-left{
+    box-shadow: 0px 0px 6px #aaa;
+    margin-top: 30px;
+    min-height: 305px;
+    padding-bottom: 15px
+}
+.domain-title{
+    color: #000;
+    margin-top: 15px
+}
+.input-group[class*="col-"] {
+    padding-right: 15px
+}
