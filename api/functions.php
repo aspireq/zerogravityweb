@@ -3,8 +3,10 @@
 class ResellerClubAPI {
 
 // Configuration Of Reseller Club API
-    public $api_user_id = "255388";
-    public $api_key = "0363O71bJmUpwJ2W5r2M9At0Jsm0UcFA";
+    //public $api_user_id = "255388";
+    public $api_user_id = "706625";
+    //public $api_key = "0363O71bJmUpwJ2W5r2M9At0Jsm0UcFA";
+    public $api_key = "Ie61qyIhGIQR45yXT2VD78rwLeOHxdNn";
 // List of TDL's - TLDs for which the domain name availability needs to be checked
     public $tlds_list = array("com", "net", "in", "biz", "org", "asia", "co");
 //Variable Declaration
