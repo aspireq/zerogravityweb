@@ -1,20 +1,18 @@
 <?php
 
-class ResellerClubAPI {
-
-// Configuration Of Reseller Club API
+class ResellerClubAPI {   
+    public $api_user_id = "706625";
+    public $api_key = "Y7xW7L2HPkjqTiJ59FRGCZu5dh3U0o78";
+    
     //public $api_user_id = "255388";
     //public $api_user_id = "706625";
-    public $api_user_id = "706625";
     //public $api_key = "0363O71bJmUpwJ2W5r2M9At0Jsm0UcFA";
     //public $api_key = "Ie61qyIhGIQR45yXT2VD78rwLeOHxdNn";
-    public $api_key = "Y7xW7L2HPkjqTiJ59FRGCZu5dh3U0o78";
-// List of TDL's - TLDs for which the domain name availability needs to be checked
-    public $tlds_list = array("com", "net", "in", "biz", "org", "asia", "co");
-//Variable Declaration
+    // List of TDL's - TLDs for which the domain name availability needs to be checked
+    
+    public $tlds_list = array("com", "net", "in", "biz", "org", "asia", "co");    
     public $domainname;
-
-//Constructor
+    
     public function __construct() {
         if (isset($_POST['domain'])) {
             $this->domainname = preg_replace('/[\s-]+/', '-', substr(trim($_POST['domain']), 0, 253));
@@ -25,7 +23,7 @@ class ResellerClubAPI {
 
 //Get Domain Availability ResellerClub API
     public function DomainAvailability($y) {
-
+        
         $tld = "";
         foreach ($this->tlds_list as $arrayitem) {
             $tld .= '&tlds=' . $arrayitem;
