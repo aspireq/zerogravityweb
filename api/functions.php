@@ -4,9 +4,11 @@ class ResellerClubAPI {
 
 // Configuration Of Reseller Club API
     //public $api_user_id = "255388";
+    //public $api_user_id = "706625";
     public $api_user_id = "706625";
     //public $api_key = "0363O71bJmUpwJ2W5r2M9At0Jsm0UcFA";
-    public $api_key = "Ie61qyIhGIQR45yXT2VD78rwLeOHxdNn";
+    //public $api_key = "Ie61qyIhGIQR45yXT2VD78rwLeOHxdNn";
+    public $api_key = "Y7xW7L2HPkjqTiJ59FRGCZu5dh3U0o78";
 // List of TDL's - TLDs for which the domain name availability needs to be checked
     public $tlds_list = array("com", "net", "in", "biz", "org", "asia", "co");
 //Variable Declaration
@@ -30,11 +32,10 @@ class ResellerClubAPI {
         }
         $url = 'https://test.httpapi.com/api/domains/available.json?auth-userid=' . $this->api_user_id . '&api-key=' . $this->api_key . '&domain-name=' . $this->domainname . $tld . '&suggest-alternative=true';
         $url = 'https://test.httpapi.com/api/domains/available.json?auth-userid=' . $this->api_user_id . '&api-key=' . $this->api_key . '&domain-name=' . $this->domainname . $tld . '&suggest-alternative=true';
-
-//	if ($data) $url = sprintf("%s?%s", $url, http_build_query($data));
-
+        
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt ($curl, CURLOPT_CAINFO,getcwd().'/cacert.pem');
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $apidata = curl_exec($curl);
         $data = json_decode($apidata, TRUE);
@@ -82,3 +83,4 @@ class ResellerClubAPI {
 }
 
 $api = new ResellerClubAPI;
+
