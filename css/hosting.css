@@ -27,7 +27,7 @@
     text-transform: uppercase;
 }
 #linux .nav > li > a > img, #windows .nav > li > a > img {
-    max-width: none;+
+    max-width: none;
     width: 25px;
     margin: 10px;
 }

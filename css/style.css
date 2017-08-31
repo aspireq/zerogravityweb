@@ -103,7 +103,6 @@ header{
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: underline;
   color: #333;
-  background-color: ;
 }
 .mega-dropdown-menu .dropdown-header {
   color: #fff;
