@@ -113,7 +113,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                </div>
+                </div>  
                 <a class="navbar-brand" href="index-2.html">
                     <img alt="Brand" src="img/logo.png" width="180">
                 </a>
