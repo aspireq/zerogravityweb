@@ -2,8 +2,11 @@
 <html lang="en">
    
 <!-- Mirrored from zerogravityweb.in/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Aug 2017 11:59:45 GMT -->
+<?php include "head.php"; ?>
 
-   <body>
+
+<body>
+    <?php include "header.php"; ?>   
     <div id="body">
       <section class="domainsearch">
         <div class="container">
@@ -325,6 +328,7 @@
        <i class="fa fa-2x fa-chevron-up"></i>
        </span>
     </div>
+    <?php include "footer.php"; ?>
     
   </body>
 
